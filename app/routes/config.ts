@@ -32,6 +32,11 @@ export function routes() {
           path: "articles/article3",
           lazy: () => import("./articles/article3/route"),
         },
+        {
+          id: "docs",
+          path: "docs/*",
+          lazy: () => import("./docs/route"),
+        },
       ],
     },
   ] satisfies RSCRouteConfig;
